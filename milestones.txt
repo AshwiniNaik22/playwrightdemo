@@ -1,0 +1,29 @@
+/**
+ * Playwright E2E: Playlist creation flow
+ * -------------------------------------------------------------
+ * This file delivers BOTH requested objectives:
+ * 1) Key milestones in the user journey (see below)
+ * 2) Concrete test cases to ensure each milestone is crossed
+ *
+ * Assumptions (adapt as per app in Loom):
+ * - App has email/password login.
+ * - Data-test attributes exist (preferred) or replace selectors as needed.
+ * - Base URL set in Playwright config.
+ * - A searchable catalog of tracks exists.
+ * - Duplicate track handling: app either prevents or allows with a toast; both paths covered.
+ *
+ * ---------------------------------
+ * 1 KEY MILESTONES (USER JOURNEY)
+ * ---------------------------------
+ * M1: Auth gate passed (user can sign in and land on Library/Home)
+ * M2: Create a new playlist (empty shell created and visible)
+ * M3: Name/rename the playlist (title saved & persists)
+ * M4: Add tracks to playlist (via search/browse; track chips/cards added)
+ * M5: Save playlist (playlist stored and appears in list/sidebar)
+ * M6: Verify playlist contents (correct track count/order)
+ * M7: Basic playback sanity (first track can start playing)
+ * M8: Persistence across reload/session (playlist & tracks remain after reload/new login)
+ * M9: Edit operations (remove/reorder tracks) reflect correctly
+ * M10: Guardrails (duplicates, empty save, invalid name) handled with proper UX
+ *
+**/
